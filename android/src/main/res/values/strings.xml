@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MPP-Template</string>
+    <string name="title_items">Items</string>
+    <string name="title_settings">Settings</string>
+</resources>
