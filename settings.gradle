@@ -1,0 +1,6 @@
+rootProject.name = 'MPP-Template'
+
+include ':android'
+include ':shared-mp'
+
+enableFeaturePreview('GRADLE_METADATA')
