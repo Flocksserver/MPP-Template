@@ -1,2 +1,2 @@
 # MPP-Template
-Kotlin Multiplatform Project Template
+Kotlin Mobile Multiplatform Project Template
