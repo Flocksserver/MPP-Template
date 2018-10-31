@@ -1,0 +1,29 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - Swinject (2.5.0)
+  - SwinjectStoryboard (2.1.0):
+    - Swinject (~> 2.5)
+  - TagListView-ObjC (0.1.1)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.0.0)
+  - Swinject (~> 2.5.0)
+  - SwinjectStoryboard (~> 2.1.0)
+  - TagListView-ObjC (~> 0.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MBProgressHUD
+    - Swinject
+    - SwinjectStoryboard
+    - TagListView-ObjC
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Swinject: 82cdb851f63f91bba974e3eca1d69780f2f7677e
+  SwinjectStoryboard: 688f096033103e66ffcf6ca678211acd7d7be505
+  TagListView-ObjC: 432991e24c5177eb4fa7d721de7084f09f39a0b8
+
+PODFILE CHECKSUM: 61773353bf081416ff76701ff10a179b2fcc86ed
+
+COCOAPODS: 1.5.3
