@@ -12,7 +12,7 @@ All sharing the same common code.
 - Uses kotlin coroutines but not in a clear thoughtful way (under development)
 
 <div>
-<img src="img/Kotlin-MPP-Android.jpg" width="200"/>
-<img src="img/Kotlin-MPP-iOS.jpg" width="200"/>
-<img src="img/Kotlin-MPP-Webapp.png" width="200"/>
+<img src="img/Kotlin-MPP-Android.jpg" width="300"/>
+<img src="img/Kotlin-MPP-iOS.jpg" width="300"/>
+<img src="img/Kotlin-MPP-Webapp.png" width="300"/>
 </div>
