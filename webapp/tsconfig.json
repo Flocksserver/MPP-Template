@@ -10,9 +10,11 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "target": "es5",
+    "allowJs": true,
     "typeRoots": [
       "node_modules/@types"
     ],
+    "types": ["node, kotlin"],
     "lib": [
       "es2018",
       "dom"
