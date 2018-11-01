@@ -10,5 +10,7 @@ angular.module('myApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', [function() {
+    //var presenter = new ItemPresenter();
 
+    console.log()
 }]);
