@@ -7,7 +7,7 @@ import de.flocksserver.mpp.App
 import de.flocksserver.mpp.di.scope.PerApplication
 import de.flocksserver.mpp.UIThread
 import de.flocksserver.mpp.data.service.CustomItemService
-import de.flocksserver.mpp.domain.PostExecutionThread
+import de.flocksserver.mpp.domain.UIContext
 import de.flocksserver.mpp.domain.repository.ItemRepository
 
 
@@ -29,7 +29,7 @@ class ApplicationModule(private val androidApplication: App) {
 
     @Provides
     @PerApplication
-    fun providePostExecutionThread(uiThread: UIThread): PostExecutionThread {
+    fun providePostExecutionThread(uiThread: UIThread): UIContext {
         return uiThread
     }
 

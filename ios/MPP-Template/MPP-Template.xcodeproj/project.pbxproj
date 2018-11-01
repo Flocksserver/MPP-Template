@@ -16,7 +16,8 @@
 		D3C32F9F218A391C00CE8166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C32F9D218A391C00CE8166 /* LaunchScreen.storyboard */; };
 		D3C32FAC218A3B7100CE8166 /* shared_mp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C32FAB218A3B7100CE8166 /* shared_mp.framework */; };
 		D3C32FAD218A3B7100CE8166 /* shared_mp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C32FAB218A3B7100CE8166 /* shared_mp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D3C32FB1218A3FED00CE8166 /* UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32FB0218A3FED00CE8166 /* UI.swift */; };
+		D3C32FB1218A3FED00CE8166 /* UIThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32FB0218A3FED00CE8166 /* UIThread.swift */; };
+		D3C32FB3218B810300CE8166 /* MainDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32FB2218B810300CE8166 /* MainDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,7 +46,8 @@
 		D3C32F9E218A391C00CE8166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3C32FA0218A391C00CE8166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3C32FAB218A3B7100CE8166 /* shared_mp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared_mp.framework; path = "../../shared-mp/build/xcode-frameworks/shared_mp.framework"; sourceTree = "<group>"; };
-		D3C32FB0218A3FED00CE8166 /* UI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI.swift; sourceTree = "<group>"; };
+		D3C32FB0218A3FED00CE8166 /* UIThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThread.swift; sourceTree = "<group>"; };
+		D3C32FB2218B810300CE8166 /* MainDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDispatcher.swift; sourceTree = "<group>"; };
 		E31B0875382FA813A7D4BA81 /* Pods-MPP-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP-Template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPP-Template/Pods-MPP-Template.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -108,7 +110,8 @@
 				D3C32F9B218A391C00CE8166 /* Assets.xcassets */,
 				D3C32F9D218A391C00CE8166 /* LaunchScreen.storyboard */,
 				D3C32FA0218A391C00CE8166 /* Info.plist */,
-				D3C32FB0218A3FED00CE8166 /* UI.swift */,
+				D3C32FB0218A3FED00CE8166 /* UIThread.swift */,
+				D3C32FB2218B810300CE8166 /* MainDispatcher.swift */,
 			);
 			path = "MPP-Template";
 			sourceTree = "<group>";
@@ -259,8 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C32F97218A391A00CE8166 /* SecondViewController.swift in Sources */,
-				D3C32FB1218A3FED00CE8166 /* UI.swift in Sources */,
+				D3C32FB1218A3FED00CE8166 /* UIThread.swift in Sources */,
 				D3C32F93218A391A00CE8166 /* AppDelegate.swift in Sources */,
+				D3C32FB3218B810300CE8166 /* MainDispatcher.swift in Sources */,
 				D3C32F95218A391A00CE8166 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

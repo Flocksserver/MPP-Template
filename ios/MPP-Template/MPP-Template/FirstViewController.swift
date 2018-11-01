@@ -43,8 +43,8 @@ class FirstViewController: UIViewController, ItemsContractView {
         
     }
     
-    func getUIThread() -> KotlinCoroutineContext {
-        return UI()
+    func getUIThread() -> UIContext {
+        return UIThread()
     }
 
 }

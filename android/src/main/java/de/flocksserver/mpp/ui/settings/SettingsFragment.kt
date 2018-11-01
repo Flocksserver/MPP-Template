@@ -7,6 +7,8 @@ import de.flocksserver.mpp.R
 import de.flocksserver.mpp.base.BaseFragment
 import de.flocksserver.mpp.di.components.MainComponent
 import de.flocksserver.mpp.di.components.app
+import de.flocksserver.mpp.domain.UIContext
+import kotlinx.coroutines.CoroutineDispatcher
 import kotlin.coroutines.CoroutineContext
 
 /**
@@ -49,8 +51,8 @@ class SettingsFragment : BaseFragment(), SettingsContract.View {
         }
     }
 
-    override fun getUIThread(): CoroutineContext {
-        return app().postExecutionThread().scheduler
+    override fun getUIThread(): UIContext {
+        return app().postExecutionThread()
     }
 
     override fun error(error: String) {

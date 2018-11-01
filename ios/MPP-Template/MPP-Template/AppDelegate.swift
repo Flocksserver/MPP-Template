@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var container: Container = {
         let container = Container()
-        container.register(UI.self) { _ in UI() }
+        container.register(UIThread.self) { _ in UIThread() }
         container.register(ItemRepository.self) { _ in CustomItemService() }
         container.register(GetMyItemsUseCase.self) { r in
             GetMyItemsUseCase(repository: r.resolve(ItemRepository.self)!)
@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         container.register(ItemsPresenter.self) { r in
             ItemsPresenter(
                 getMyItemsUseCase: r.resolve(GetMyItemsUseCase.self)!,
-                uiContext: r.resolve(UI.self)!
+                uiContext: r.resolve(UIThread.self)!
             )
         }
         container.storyboardInitCompleted(FirstViewController.self) { r, c in

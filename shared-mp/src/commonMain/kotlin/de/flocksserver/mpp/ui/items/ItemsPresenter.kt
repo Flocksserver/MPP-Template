@@ -1,5 +1,6 @@
 package de.flocksserver.mpp.ui.items
 
+import de.flocksserver.mpp.domain.UIContext
 import de.flocksserver.mpp.domain.usecase.base.ActionReceiver
 import de.flocksserver.mpp.domain.usecase.item.GetMyItemsUseCase
 import de.flocksserver.mpp.ui.base.BasePresenter
@@ -13,13 +14,13 @@ import kotlin.coroutines.CoroutineContext
  */
 class ItemsPresenter(
         private val getMyItemsUseCase: GetMyItemsUseCase,
-        private val uiContext: CoroutineContext
+        private val uiContext: UIContext
 ): BasePresenter<ItemsContract.View>, ItemsContract.Presenter {
 
     override var view: ItemsContract.View? = null
 
     override fun showItems() {
-        GlobalScope.launch(uiContext) {
+        GlobalScope.launch(uiContext.context) {
             getMyItemsUseCase.execute(
                     ActionReceiver { items ->
                         if (items != null) {
