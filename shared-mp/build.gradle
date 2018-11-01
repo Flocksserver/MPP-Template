@@ -15,7 +15,7 @@ kotlin {
         }
 
         fromPreset(presets.jvm, 'jvm')
-
+        fromPreset(presets.js, 'js')
     }
     sourceSets {
         commonMain {
@@ -40,6 +40,12 @@ kotlin {
         iOSMain {
             dependencies {
                 implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-native:$coroutines_version"
+            }
+        }
+        jsMain {
+            dependencies {
+                implementation 'org.jetbrains.kotlin:kotlin-stdlib-js'
+                implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core-js:$coroutines_version"
             }
         }
     }

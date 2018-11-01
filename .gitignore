@@ -201,3 +201,10 @@ gradle-app.setting
 
 # # Work around https://youtrack.jetbrains.com/issue/IDEA-116898
 # gradle/wrapper/gradle-wrapper.properties
+
+*/logs/*
+!.gitkeep
+*/node_modules/
+*/app/lib/
+*/tmp
+.idea
