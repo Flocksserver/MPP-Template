@@ -9,7 +9,6 @@ import android.view.View
 import android.widget.TextView
 import android.widget.Toast
 import de.flocksserver.mpp.R
-import de.flocksserver.mpp.UIThread
 import de.flocksserver.mpp.base.BaseFragment
 import de.flocksserver.mpp.data.model.ItemsModel
 import de.flocksserver.mpp.di.components.MainComponent
@@ -22,8 +21,7 @@ import de.flocksserver.mpp.model.mapper.ItemMVM
 import kotlinx.android.synthetic.main.fragment_items.*
 import de.flocksserver.mpp.model.mapper.ItemsMVM
 import de.flocksserver.mpp.util.ViewIdGenerator
-import kotlinx.coroutines.CoroutineDispatcher
-import kotlin.coroutines.*
+
 
 /**
  * Created by marcel on 24.07.17.

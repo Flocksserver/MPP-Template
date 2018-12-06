@@ -8,6 +8,8 @@
       <module name="_shared-mp_jvmTest" target="1.6" />
       <module name="MPP-Template_jvmMain" target="1.6" />
       <module name="MPP-Template_jvmTest" target="1.6" />
+      <module name="shared-mp_jvmMain" target="1.6" />
+      <module name="shared-mp_jvmTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
