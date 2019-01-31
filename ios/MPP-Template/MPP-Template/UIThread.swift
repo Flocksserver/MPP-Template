@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import TagListView_ObjC
-import shared_mp
+import main
 import MBProgressHUD
 
 public class UIThread: Kotlinx_coroutines_core_nativeCoroutineDispatcher, UIContext {

@@ -2,7 +2,7 @@
   <artifact type="jar" name="shared-mp-jvm-0.0.1">
     <output-path>$PROJECT_DIR$/shared-mp/build/libs</output-path>
     <root id="archive" name="shared-mp-jvm-0.0.1.jar">
-      <element id="module-output" name="shared-mp_jvmMain" />
+      <element id="module-output" name="de.flocksserver.mpp.shared-mp.jvmMain" />
     </root>
   </artifact>
 </component>

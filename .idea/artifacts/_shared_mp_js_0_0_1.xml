@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name=" shared-mp-js-0.0.1">
-    <output-path>$PROJECT_DIR$/ shared-mp/build/libs</output-path>
-    <root id="archive" name=" shared-mp-js-0.0.1.jar">
-      <element id="module-output" name="_shared-mp_jsMain" />
-    </root>
-  </artifact>
-</component>

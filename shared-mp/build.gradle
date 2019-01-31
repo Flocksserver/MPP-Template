@@ -1,5 +1,5 @@
 apply plugin: 'kotlin-multiplatform'
-apply plugin: 'maven-publish'
+apply plugin: 'com.android.library'
 
 group 'de.flocksserver.mpp'
 version '0.0.1'
@@ -14,7 +14,7 @@ kotlin {
             compilations.main.outputKinds('FRAMEWORK')
         }
 
-        fromPreset(presets.jvm, 'jvm')
+        fromPreset(presets.android, 'android')
         fromPreset(presets.js, 'js'){
             // TODO commonjs right module?
             // TODO copy lib in web dir
@@ -34,7 +34,7 @@ kotlin {
                 implementation 'org.jetbrains.kotlin:kotlin-test-annotations-common'
             }
         }
-        jvmMain {
+        androidMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
                 implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -79,3 +79,16 @@ task packForXCode(type: Sync) {
 }
 
 tasks.build.dependsOn packForXCode
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 15
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}

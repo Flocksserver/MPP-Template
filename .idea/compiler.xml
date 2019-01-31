@@ -2,14 +2,10 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="_shared-mp_androidMain" target="1.6" />
-      <module name="_shared-mp_androidTest" target="1.6" />
-      <module name="_shared-mp_jvmMain" target="1.6" />
-      <module name="_shared-mp_jvmTest" target="1.6" />
-      <module name="MPP-Template_jvmMain" target="1.6" />
-      <module name="MPP-Template_jvmTest" target="1.6" />
-      <module name="shared-mp_jvmMain" target="1.6" />
-      <module name="shared-mp_jvmTest" target="1.6" />
+      <module name="de.flocksserver.mpp.shared-mp.androidMain" target="1.6" />
+      <module name="de.flocksserver.mpp.shared-mp.androidTest" target="1.6" />
+      <module name="de.flocksserver.mpp.shared-mp.jvmMain" target="1.6" />
+      <module name="de.flocksserver.mpp.shared-mp.jvmTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>

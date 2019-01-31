@@ -8,26 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		BA9273DDD865830E4A281534 /* Pods_MPP_Template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25ED37FB44D061358EB3522A /* Pods_MPP_Template.framework */; };
+		D3B58D6C22035F59007ADF81 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B58D6B22035F59007ADF81 /* main.framework */; };
+		D3B58D6D22035F64007ADF81 /* main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3B58D6B22035F59007ADF81 /* main.framework */; };
+		D3B58D6E22035F64007ADF81 /* main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3B58D6B22035F59007ADF81 /* main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3C32F93218A391A00CE8166 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32F92218A391A00CE8166 /* AppDelegate.swift */; };
 		D3C32F95218A391A00CE8166 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32F94218A391A00CE8166 /* FirstViewController.swift */; };
 		D3C32F97218A391A00CE8166 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32F96218A391A00CE8166 /* SecondViewController.swift */; };
 		D3C32F9A218A391A00CE8166 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C32F98218A391A00CE8166 /* Main.storyboard */; };
 		D3C32F9C218A391C00CE8166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3C32F9B218A391C00CE8166 /* Assets.xcassets */; };
 		D3C32F9F218A391C00CE8166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3C32F9D218A391C00CE8166 /* LaunchScreen.storyboard */; };
-		D3C32FAC218A3B7100CE8166 /* shared_mp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C32FAB218A3B7100CE8166 /* shared_mp.framework */; };
-		D3C32FAD218A3B7100CE8166 /* shared_mp.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D3C32FAB218A3B7100CE8166 /* shared_mp.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D3C32FB1218A3FED00CE8166 /* UIThread.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32FB0218A3FED00CE8166 /* UIThread.swift */; };
 		D3C32FB3218B810300CE8166 /* MainDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C32FB2218B810300CE8166 /* MainDispatcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D3C32FAE218A3B7100CE8166 /* Embed Frameworks */ = {
+		D3B58D6F22035F64007ADF81 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				D3C32FAD218A3B7100CE8166 /* shared_mp.framework in Embed Frameworks */,
+				D3B58D6E22035F64007ADF81 /* main.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		25ED37FB44D061358EB3522A /* Pods_MPP_Template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPP_Template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6459BE9E0A0DCFC3385DE69F /* Pods-MPP-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-MPP-Template/Pods-MPP-Template.release.xcconfig"; sourceTree = "<group>"; };
+		D3B58D6B22035F59007ADF81 /* main.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = main.framework; path = "../../shared-mp/build/xcode-frameworks/main.framework"; sourceTree = "<group>"; };
 		D3C32F8F218A391A00CE8166 /* MPP-Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MPP-Template.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3C32F92218A391A00CE8166 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3C32F94218A391A00CE8166 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 		D3C32F9B218A391C00CE8166 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3C32F9E218A391C00CE8166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3C32FA0218A391C00CE8166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3C32FAB218A3B7100CE8166 /* shared_mp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared_mp.framework; path = "../../shared-mp/build/xcode-frameworks/shared_mp.framework"; sourceTree = "<group>"; };
 		D3C32FB0218A3FED00CE8166 /* UIThread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIThread.swift; sourceTree = "<group>"; };
 		D3C32FB2218B810300CE8166 /* MainDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDispatcher.swift; sourceTree = "<group>"; };
 		E31B0875382FA813A7D4BA81 /* Pods-MPP-Template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPP-Template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MPP-Template/Pods-MPP-Template.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3C32FAC218A3B7100CE8166 /* shared_mp.framework in Frameworks */,
+				D3B58D6D22035F64007ADF81 /* main.framework in Frameworks */,
+				D3B58D6C22035F59007ADF81 /* main.framework in Frameworks */,
 				BA9273DDD865830E4A281534 /* Pods_MPP_Template.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +69,7 @@
 		320275B3720EC1A8EC7DFEE3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3B58D6B22035F59007ADF81 /* main.framework */,
 				25ED37FB44D061358EB3522A /* Pods_MPP_Template.framework */,
 			);
 			name = Frameworks;
@@ -84,7 +87,6 @@
 		D3C32F86218A391A00CE8166 = {
 			isa = PBXGroup;
 			children = (
-				D3C32FAB218A3B7100CE8166 /* shared_mp.framework */,
 				D3C32F91218A391A00CE8166 /* MPP-Template */,
 				D3C32F90218A391A00CE8166 /* Products */,
 				A0A533DA22FDB9824A6D5B76 /* Pods */,
@@ -129,7 +131,7 @@
 				D3C32F8C218A391A00CE8166 /* Frameworks */,
 				D3C32F8D218A391A00CE8166 /* Resources */,
 				4234046863CC4FCD9101C572 /* [CP] Embed Pods Frameworks */,
-				D3C32FAE218A3B7100CE8166 /* Embed Frameworks */,
+				D3B58D6F22035F64007ADF81 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

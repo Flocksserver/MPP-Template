@@ -9,7 +9,7 @@
 import UIKit
 import Swinject
 import SwinjectStoryboard
-import shared_mp
+import main
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

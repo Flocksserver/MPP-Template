@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import shared_mp
+import main
 
 class FirstViewController: UIViewController, ItemsContractView {
 
